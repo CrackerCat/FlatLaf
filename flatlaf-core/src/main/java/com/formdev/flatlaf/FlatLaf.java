@@ -60,7 +60,6 @@ import javax.swing.plaf.basic.BasicLookAndFeel;
 import javax.swing.text.StyleContext;
 import javax.swing.text.html.HTMLEditorKit;
 import com.formdev.flatlaf.ui.FlatNativeWindowBorder;
-import com.formdev.flatlaf.ui.FlatPopupFactory;
 import com.formdev.flatlaf.ui.FlatRootPaneUI;
 import com.formdev.flatlaf.util.GrayFilter;
 import com.formdev.flatlaf.util.LoggingFacade;
@@ -219,8 +218,8 @@ public abstract class FlatLaf
 		super.initialize();
 
 		// install popup factory
-		oldPopupFactory = PopupFactory.getSharedInstance();
-		PopupFactory.setSharedInstance( new FlatPopupFactory() );
+//		oldPopupFactory = PopupFactory.getSharedInstance();
+//		PopupFactory.setSharedInstance( new FlatPopupFactory() );
 
 		// install mnemonic handler
 		mnemonicHandler = new MnemonicHandler();
